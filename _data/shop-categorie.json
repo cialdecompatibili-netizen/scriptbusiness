@@ -2,5 +2,29 @@
   {
     "nome": "cmspush-cat",
     "slug": "cmspush-cat"
+  },
+  {
+    "nome": "moduli-prestashop",
+    "slug": "moduli-prestashop"
+  },
+  {
+    "nome": "moduli-wordpress",
+    "slug": "moduli-wordpress"
+  },
+  {
+    "nome": "moduli-magento",
+    "slug": "moduli-magento"
+  },
+  {
+    "nome": "moduli-opencart",
+    "slug": "moduli-opencart"
+  },
+  {
+    "nome": "moduli-shopify",
+    "slug": "moduli-shopify"
+  },
+  {
+    "nome": "moduli-cscart",
+    "slug": "moduli-cscart"
   }
 ]

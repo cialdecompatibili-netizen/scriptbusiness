@@ -15,8 +15,16 @@ BE = ["Website free forever on GitHub Pages", "Visual admin panel in the browser
 # id, nome, prezzo in centesimi
 V = [("cmspush", "CmsPush", 1900), ("cmspushacademy", "CmsPush Academy", 1900)]
 
+CATS = [("cmspush-cat", "CmsPush", "CmsPush", "🚀"),
+        ("moduli-prestashop", "Moduli PrestaShop", "PrestaShop modules", "🛒"),
+        ("moduli-wordpress", "Moduli WordPress", "WordPress modules", "📝"),
+        ("moduli-magento", "Moduli Magento 2", "Magento 2 modules", "🧱"),
+        ("moduli-opencart", "Moduli OpenCart", "OpenCart modules", "🛍️"),
+        ("moduli-shopify", "Moduli Shopify", "Shopify modules", "🏪"),
+        ("moduli-cscart", "Moduli CS-Cart", "CS-Cart modules", "🧩")]
+
 cat = {"_nota": "Catalogo ScriptBusiness (prezzi in CENTESIMI). Generato da automation/genera_scriptbusiness.py.",
-       "categorie": [{"nome": "CmsPush", "id": "cmspush-cat", "icona": "🚀", "tr": {"en": {"nome": "CmsPush"}}}], "prodotti": []}
+       "categorie": [{"nome": n, "id": i, "icona": ic, "tr": {"en": {"nome": ne}}} for i, n, ne, ic in CATS], "prodotti": []}
 for pid, nome, cent in V:
     fi = IT + "\n" + "\n".join("✓ " + b for b in BI) + "\nDemo: " + DEMO
     fe = EN + "\n" + "\n".join("✓ " + b for b in BE) + "\nDemo: " + DEMO
@@ -24,7 +32,7 @@ for pid, nome, cent in V:
         "descrizione": IT, "descrizione_completa": fi, "immagine": "", "icona": "🚀", "visibile": True,
         "tr": {"en": {"nome": nome, "descrizione": EN, "descrizione_completa": fe}}})
 W("_data/catalogo.json", json.dumps(cat, ensure_ascii=False, indent=2))
-W("_data/shop-categorie.json", json.dumps([{"nome": "cmspush-cat", "slug": "cmspush-cat"}], indent=2))
+W("_data/shop-categorie.json", json.dumps([{"nome": i, "slug": i} for i, n, ne, ic in CATS], indent=2))
 
 # pagine: via gli esempi e i vecchi file generati
 for f in (glob.glob(os.path.join(R, "_negozio", "*.md")) + glob.glob(os.path.join(R, "en", "negozio", "*.md")) + glob.glob(os.path.join(R, "en", "negozio", "categoria", "*.md"))):
@@ -32,8 +40,10 @@ for f in (glob.glob(os.path.join(R, "_negozio", "*.md")) + glob.glob(os.path.joi
 for pid, nome, cent in V:
     W(f"_negozio/{pid}.md", f'---\nlayout: negozio-prodotto\ntitle: "{nome}"\npid: {pid}\npermalink: /negozio/{pid}/\ndescription: "{IT[:150]}"\nref: shop-prod-{pid}\n---\n')
     W(f"en/negozio/{pid}.md", f'---\nlayout: negozio-prodotto\ntitle: "{nome}"\npid: {pid}\npermalink: /en/shop/{pid}/\ndescription: "{EN[:150]}"\nlang: en\nlocale: en\nref: shop-prod-{pid}\ntr: tradotto\n---\n')
-W("_negozio/categoria-cmspush.md", '---\nlayout: negozio-categoria\ntitle: "CmsPush"\ncid: cmspush-cat\npermalink: /negozio/categoria/cmspush-cat/\ndescription: "CmsPush: sito gratis per sempre su GitHub"\nref: shop-cat-cmspush-cat\n---\n')
-W("en/negozio/categoria/cmspush-cat.md", '---\nlayout: negozio-categoria\ntitle: "CmsPush"\ncid: cmspush-cat\npermalink: /en/shop/category/cmspush-cat/\ndescription: "CmsPush: free website forever on GitHub"\nlang: en\nlocale: en\nref: shop-cat-cmspush-cat\ntr: tradotto\n---\n')
+
+for i, n, ne, ic in CATS:
+    W(f"_negozio/categoria-{i}.md", f'---\nlayout: negozio-categoria\ntitle: "{n}"\ncid: {i}\npermalink: /negozio/categoria/{i}/\ndescription: "{n} ScriptBusiness"\nref: shop-cat-{i}\n---\n')
+    W(f"en/negozio/categoria/{i}.md", f'---\nlayout: negozio-categoria\ntitle: "{ne}"\ncid: {i}\npermalink: /en/shop/category/{i}/\ndescription: "{ne} ScriptBusiness"\nlang: en\nlocale: en\nref: shop-cat-{i}\ntr: tradotto\n---\n')
 
 def home(lang):
     en = lang == "en"; base = "__BASEURL__/en" if en else "__BASEURL__"; shop = base + ("/shop/" if en else "/negozio/")

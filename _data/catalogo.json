@@ -10,6 +10,66 @@
           "nome": "CmsPush"
         }
       }
+    },
+    {
+      "nome": "Moduli PrestaShop",
+      "id": "moduli-prestashop",
+      "icona": "🛒",
+      "tr": {
+        "en": {
+          "nome": "PrestaShop modules"
+        }
+      }
+    },
+    {
+      "nome": "Moduli WordPress",
+      "id": "moduli-wordpress",
+      "icona": "📝",
+      "tr": {
+        "en": {
+          "nome": "WordPress modules"
+        }
+      }
+    },
+    {
+      "nome": "Moduli Magento 2",
+      "id": "moduli-magento",
+      "icona": "🧱",
+      "tr": {
+        "en": {
+          "nome": "Magento 2 modules"
+        }
+      }
+    },
+    {
+      "nome": "Moduli OpenCart",
+      "id": "moduli-opencart",
+      "icona": "🛍️",
+      "tr": {
+        "en": {
+          "nome": "OpenCart modules"
+        }
+      }
+    },
+    {
+      "nome": "Moduli Shopify",
+      "id": "moduli-shopify",
+      "icona": "🏪",
+      "tr": {
+        "en": {
+          "nome": "Shopify modules"
+        }
+      }
+    },
+    {
+      "nome": "Moduli CS-Cart",
+      "id": "moduli-cscart",
+      "icona": "🧩",
+      "tr": {
+        "en": {
+          "nome": "CS-Cart modules"
+        }
+      }
     }
   ],
   "prodotti": [
