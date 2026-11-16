@@ -31,6 +31,36 @@ for pid, nome, cent in V:
     cat["prodotti"].append({"tipo": "digitale", "id": pid, "nome": nome, "categoria": "cmspush-cat", "prezzo_centesimi": cent,
         "descrizione": IT, "descrizione_completa": fi, "immagine": "", "icona": "🚀", "visibile": True,
         "tr": {"en": {"nome": nome, "descrizione": EN, "descrizione_completa": fe}}})
+
+# ---- Moduli per piattaforma (testi e prezzi dal sito originale scriptbusiness.shop)
+PLAT = [("cscart", "CS-Cart", "moduli-cscart"), ("magento", "Magento 2", "moduli-magento"), ("opencart", "OpenCart", "moduli-opencart"),
+        ("prestashop", "PrestaShop", "moduli-prestashop"), ("shopify", "Shopify", "moduli-shopify"), ("woocommerce", "WooCommerce", "moduli-wordpress")]
+PRZ = {"inpost-locker": [5990, 8990, 3990, 4990, 6990, 4490], "redis-cache": [4490, 6990, 2990, 3990, 4990, 3490], "antispam-captcha": [2990, 3990, 1990, 2490, 2990, 1990]}
+NM = {"inpost-locker": ("InPost Locker", "InPost Locker", "📦"), "redis-cache": ("Redis Cache", "Redis Cache", "⚡"), "antispam-captcha": ("Antispam CAPTCHA", "Antispam CAPTCHA", "🛡️")}
+def txt(mod, plat, en):
+    if mod == "inpost-locker":
+        if en: return f"InPost locker map in {plat} checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding."
+        return f"Mappa locker InPost nel checkout {plat}, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato."
+    if mod == "redis-cache":
+        if en: return f"Redis cache for {plat}, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages."
+        return f"Cache Redis per {plat}, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine."
+    if en: return f"Block spam and bots on {plat} with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month."
+    return f"Blocca spam e bot su {plat} con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese."
+X = []  # (id, nome_it, nome_en, cat, cent, it, en, icona)
+for mod in PRZ:
+    for (sl, plat, cid), cent in zip(PLAT, PRZ[mod]):
+        n = NM[mod]
+        X.append((f"{mod}-{sl}", f"{n[0]} per {plat}", f"{n[1]} for {plat}", cid, cent, txt(mod, plat, False), txt(mod, plat, True), n[2]))
+X += [("wordpress-ai-copilot", "WordPress AI Copilot", "WordPress AI Copilot", "moduli-wordpress", 2490,
+       "Collega WordPress a un assistente AI e pilota il sito scrivendo in chat: articoli, pagine, media e menu senza aprire la bacheca. Installazione in due minuti, licenza una tantum.",
+       "Connect WordPress to an AI assistant and run the site by chatting: posts, pages, media and menus without opening the dashboard. Two-minute setup, one-time license.", "✨"),
+      ("wp-translate-ai", "WP Translate AI", "WP Translate AI", "moduli-wordpress", 2490,
+       "Plugin WordPress leggero per siti multilingua, con traduzione automatica via API AI (chiave tua, nessun credito proprietario). Alternativa a WPML senza abbonamento fisso.",
+       "Lightweight WordPress plugin for multilingual sites, with automatic translation via AI API (your own key, no proprietary credits). A WPML alternative with no fixed subscription.", "🌍")]
+for pid, ni, ne, c, cent, ti, te, ic in X:
+    cat["prodotti"].append({"tipo": "digitale", "id": pid, "nome": ni, "categoria": c, "prezzo_centesimi": cent, "descrizione": ti,
+        "descrizione_completa": ti, "immagine": "", "icona": ic, "visibile": True, "tr": {"en": {"nome": ne, "descrizione": te, "descrizione_completa": te}}})
+
 W("_data/catalogo.json", json.dumps(cat, ensure_ascii=False, indent=2))
 W("_data/shop-categorie.json", json.dumps([{"nome": i, "slug": i} for i, n, ne, ic in CATS], indent=2))
 
@@ -44,6 +74,10 @@ for pid, nome, cent in V:
 for i, n, ne, ic in CATS:
     W(f"_negozio/categoria-{i}.md", f'---\nlayout: negozio-categoria\ntitle: "{n}"\ncid: {i}\npermalink: /negozio/categoria/{i}/\ndescription: "{n} ScriptBusiness"\nref: shop-cat-{i}\n---\n')
     W(f"en/negozio/categoria/{i}.md", f'---\nlayout: negozio-categoria\ntitle: "{ne}"\ncid: {i}\npermalink: /en/shop/category/{i}/\ndescription: "{ne} ScriptBusiness"\nlang: en\nlocale: en\nref: shop-cat-{i}\ntr: tradotto\n---\n')
+
+for pid, ni, ne, c, cent, ti, te, ic in X:
+    W(f"_negozio/{pid}.md", f'---\nlayout: negozio-prodotto\ntitle: "{ni}"\npid: {pid}\npermalink: /negozio/{pid}/\ndescription: "{ti[:150]}"\nref: shop-prod-{pid}\n---\n')
+    W(f"en/negozio/{pid}.md", f'---\nlayout: negozio-prodotto\ntitle: "{ne}"\npid: {pid}\npermalink: /en/shop/{pid}/\ndescription: "{te[:150]}"\nlang: en\nlocale: en\nref: shop-prod-{pid}\ntr: tradotto\n---\n')
 
 def home(lang):
     en = lang == "en"; base = "__BASEURL__/en" if en else "__BASEURL__"; shop = base + ("/shop/" if en else "/negozio/")

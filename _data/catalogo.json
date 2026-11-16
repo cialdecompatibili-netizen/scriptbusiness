@@ -110,6 +110,386 @@
           "descrizione_completa": "Admin CMS for Jekyll and GitHub Pages: your website free forever, hosted on GitHub. Manage posts, pages and shop right from the browser. No server, no hosting costs.\n✓ Website free forever on GitHub Pages\n✓ Visual admin panel in the browser\n✓ Blog + Shop built in\n✓ Automatic updates included\n✓ No server, no hosting costs\nDemo: https://cialdecompatibili-netizen.github.io/cmspush2/"
         }
       }
+    },
+    {
+      "tipo": "digitale",
+      "id": "inpost-locker-cscart",
+      "nome": "InPost Locker per CS-Cart",
+      "categoria": "moduli-cscart",
+      "prezzo_centesimi": 5990,
+      "descrizione": "Mappa locker InPost nel checkout CS-Cart, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "descrizione_completa": "Mappa locker InPost nel checkout CS-Cart, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "immagine": "",
+      "icona": "📦",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "InPost Locker for CS-Cart",
+          "descrizione": "InPost locker map in CS-Cart checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding.",
+          "descrizione_completa": "InPost locker map in CS-Cart checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "inpost-locker-magento",
+      "nome": "InPost Locker per Magento 2",
+      "categoria": "moduli-magento",
+      "prezzo_centesimi": 8990,
+      "descrizione": "Mappa locker InPost nel checkout Magento 2, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "descrizione_completa": "Mappa locker InPost nel checkout Magento 2, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "immagine": "",
+      "icona": "📦",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "InPost Locker for Magento 2",
+          "descrizione": "InPost locker map in Magento 2 checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding.",
+          "descrizione_completa": "InPost locker map in Magento 2 checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "inpost-locker-opencart",
+      "nome": "InPost Locker per OpenCart",
+      "categoria": "moduli-opencart",
+      "prezzo_centesimi": 3990,
+      "descrizione": "Mappa locker InPost nel checkout OpenCart, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "descrizione_completa": "Mappa locker InPost nel checkout OpenCart, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "immagine": "",
+      "icona": "📦",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "InPost Locker for OpenCart",
+          "descrizione": "InPost locker map in OpenCart checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding.",
+          "descrizione_completa": "InPost locker map in OpenCart checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "inpost-locker-prestashop",
+      "nome": "InPost Locker per PrestaShop",
+      "categoria": "moduli-prestashop",
+      "prezzo_centesimi": 4990,
+      "descrizione": "Mappa locker InPost nel checkout PrestaShop, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "descrizione_completa": "Mappa locker InPost nel checkout PrestaShop, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "immagine": "",
+      "icona": "📦",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "InPost Locker for PrestaShop",
+          "descrizione": "InPost locker map in PrestaShop checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding.",
+          "descrizione_completa": "InPost locker map in PrestaShop checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "inpost-locker-shopify",
+      "nome": "InPost Locker per Shopify",
+      "categoria": "moduli-shopify",
+      "prezzo_centesimi": 6990,
+      "descrizione": "Mappa locker InPost nel checkout Shopify, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "descrizione_completa": "Mappa locker InPost nel checkout Shopify, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "immagine": "",
+      "icona": "📦",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "InPost Locker for Shopify",
+          "descrizione": "InPost locker map in Shopify checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding.",
+          "descrizione_completa": "InPost locker map in Shopify checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "inpost-locker-woocommerce",
+      "nome": "InPost Locker per WooCommerce",
+      "categoria": "moduli-wordpress",
+      "prezzo_centesimi": 4490,
+      "descrizione": "Mappa locker InPost nel checkout WooCommerce, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "descrizione_completa": "Mappa locker InPost nel checkout WooCommerce, attiva da subito: nessuna API business a pagamento richiesta, a differenza anche del modulo gratuito ufficiale. Stabile, senza branding forzato.",
+      "immagine": "",
+      "icona": "📦",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "InPost Locker for WooCommerce",
+          "descrizione": "InPost locker map in WooCommerce checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding.",
+          "descrizione_completa": "InPost locker map in WooCommerce checkout, active right away: no paid business API required, unlike the official free module too. Stable, no forced branding."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "redis-cache-cscart",
+      "nome": "Redis Cache per CS-Cart",
+      "categoria": "moduli-cscart",
+      "prezzo_centesimi": 4490,
+      "descrizione": "Cache Redis per CS-Cart, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "descrizione_completa": "Cache Redis per CS-Cart, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "immagine": "",
+      "icona": "⚡",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Redis Cache for CS-Cart",
+          "descrizione": "Redis cache for CS-Cart, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages.",
+          "descrizione_completa": "Redis cache for CS-Cart, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "redis-cache-magento",
+      "nome": "Redis Cache per Magento 2",
+      "categoria": "moduli-magento",
+      "prezzo_centesimi": 6990,
+      "descrizione": "Cache Redis per Magento 2, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "descrizione_completa": "Cache Redis per Magento 2, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "immagine": "",
+      "icona": "⚡",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Redis Cache for Magento 2",
+          "descrizione": "Redis cache for Magento 2, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages.",
+          "descrizione_completa": "Redis cache for Magento 2, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "redis-cache-opencart",
+      "nome": "Redis Cache per OpenCart",
+      "categoria": "moduli-opencart",
+      "prezzo_centesimi": 2990,
+      "descrizione": "Cache Redis per OpenCart, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "descrizione_completa": "Cache Redis per OpenCart, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "immagine": "",
+      "icona": "⚡",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Redis Cache for OpenCart",
+          "descrizione": "Redis cache for OpenCart, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages.",
+          "descrizione_completa": "Redis cache for OpenCart, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "redis-cache-prestashop",
+      "nome": "Redis Cache per PrestaShop",
+      "categoria": "moduli-prestashop",
+      "prezzo_centesimi": 3990,
+      "descrizione": "Cache Redis per PrestaShop, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "descrizione_completa": "Cache Redis per PrestaShop, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "immagine": "",
+      "icona": "⚡",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Redis Cache for PrestaShop",
+          "descrizione": "Redis cache for PrestaShop, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages.",
+          "descrizione_completa": "Redis cache for PrestaShop, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "redis-cache-shopify",
+      "nome": "Redis Cache per Shopify",
+      "categoria": "moduli-shopify",
+      "prezzo_centesimi": 4990,
+      "descrizione": "Cache Redis per Shopify, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "descrizione_completa": "Cache Redis per Shopify, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "immagine": "",
+      "icona": "⚡",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Redis Cache for Shopify",
+          "descrizione": "Redis cache for Shopify, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages.",
+          "descrizione_completa": "Redis cache for Shopify, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "redis-cache-woocommerce",
+      "nome": "Redis Cache per WooCommerce",
+      "categoria": "moduli-wordpress",
+      "prezzo_centesimi": 3490,
+      "descrizione": "Cache Redis per WooCommerce, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "descrizione_completa": "Cache Redis per WooCommerce, pronta in pochi minuti: pagamento unico, nessun abbonamento mensile. La versione enterprise più diffusa per WordPress costa 95$/mese in ricorrenza - qui paghi una volta sola. Riduce le query al database e velocizza le pagine.",
+      "immagine": "",
+      "icona": "⚡",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Redis Cache for WooCommerce",
+          "descrizione": "Redis cache for WooCommerce, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages.",
+          "descrizione_completa": "Redis cache for WooCommerce, ready in minutes: one-time payment, no monthly subscription. The most popular enterprise version for WordPress costs $95/month recurring - here you pay once. Fewer database queries, faster pages."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "antispam-captcha-cscart",
+      "nome": "Antispam CAPTCHA per CS-Cart",
+      "categoria": "moduli-cscart",
+      "prezzo_centesimi": 2990,
+      "descrizione": "Blocca spam e bot su CS-Cart con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "descrizione_completa": "Blocca spam e bot su CS-Cart con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "immagine": "",
+      "icona": "🛡️",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Antispam CAPTCHA for CS-Cart",
+          "descrizione": "Block spam and bots on CS-Cart with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month.",
+          "descrizione_completa": "Block spam and bots on CS-Cart with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "antispam-captcha-magento",
+      "nome": "Antispam CAPTCHA per Magento 2",
+      "categoria": "moduli-magento",
+      "prezzo_centesimi": 3990,
+      "descrizione": "Blocca spam e bot su Magento 2 con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "descrizione_completa": "Blocca spam e bot su Magento 2 con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "immagine": "",
+      "icona": "🛡️",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Antispam CAPTCHA for Magento 2",
+          "descrizione": "Block spam and bots on Magento 2 with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month.",
+          "descrizione_completa": "Block spam and bots on Magento 2 with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "antispam-captcha-opencart",
+      "nome": "Antispam CAPTCHA per OpenCart",
+      "categoria": "moduli-opencart",
+      "prezzo_centesimi": 1990,
+      "descrizione": "Blocca spam e bot su OpenCart con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "descrizione_completa": "Blocca spam e bot su OpenCart con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "immagine": "",
+      "icona": "🛡️",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Antispam CAPTCHA for OpenCart",
+          "descrizione": "Block spam and bots on OpenCart with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month.",
+          "descrizione_completa": "Block spam and bots on OpenCart with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "antispam-captcha-prestashop",
+      "nome": "Antispam CAPTCHA per PrestaShop",
+      "categoria": "moduli-prestashop",
+      "prezzo_centesimi": 2490,
+      "descrizione": "Blocca spam e bot su PrestaShop con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "descrizione_completa": "Blocca spam e bot su PrestaShop con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "immagine": "",
+      "icona": "🛡️",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Antispam CAPTCHA for PrestaShop",
+          "descrizione": "Block spam and bots on PrestaShop with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month.",
+          "descrizione_completa": "Block spam and bots on PrestaShop with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "antispam-captcha-shopify",
+      "nome": "Antispam CAPTCHA per Shopify",
+      "categoria": "moduli-shopify",
+      "prezzo_centesimi": 2990,
+      "descrizione": "Blocca spam e bot su Shopify con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "descrizione_completa": "Blocca spam e bot su Shopify con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "immagine": "",
+      "icona": "🛡️",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Antispam CAPTCHA for Shopify",
+          "descrizione": "Block spam and bots on Shopify with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month.",
+          "descrizione_completa": "Block spam and bots on Shopify with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "antispam-captcha-woocommerce",
+      "nome": "Antispam CAPTCHA per WooCommerce",
+      "categoria": "moduli-wordpress",
+      "prezzo_centesimi": 1990,
+      "descrizione": "Blocca spam e bot su WooCommerce con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "descrizione_completa": "Blocca spam e bot su WooCommerce con Google reCAPTCHA, il motore che i clienti già conoscono e di cui si fidano. Pagamento unico, nessun abbonamento: da fine 2025 reCAPTCHA è gratis solo fino a 10.000 verifiche/mese.",
+      "immagine": "",
+      "icona": "🛡️",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "Antispam CAPTCHA for WooCommerce",
+          "descrizione": "Block spam and bots on WooCommerce with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month.",
+          "descrizione_completa": "Block spam and bots on WooCommerce with Google reCAPTCHA, the engine customers already know and trust. One-time payment, no subscription: since late 2025 reCAPTCHA is free only up to 10,000 checks/month."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "wordpress-ai-copilot",
+      "nome": "WordPress AI Copilot",
+      "categoria": "moduli-wordpress",
+      "prezzo_centesimi": 2490,
+      "descrizione": "Collega WordPress a un assistente AI e pilota il sito scrivendo in chat: articoli, pagine, media e menu senza aprire la bacheca. Installazione in due minuti, licenza una tantum.",
+      "descrizione_completa": "Collega WordPress a un assistente AI e pilota il sito scrivendo in chat: articoli, pagine, media e menu senza aprire la bacheca. Installazione in due minuti, licenza una tantum.",
+      "immagine": "",
+      "icona": "✨",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "WordPress AI Copilot",
+          "descrizione": "Connect WordPress to an AI assistant and run the site by chatting: posts, pages, media and menus without opening the dashboard. Two-minute setup, one-time license.",
+          "descrizione_completa": "Connect WordPress to an AI assistant and run the site by chatting: posts, pages, media and menus without opening the dashboard. Two-minute setup, one-time license."
+        }
+      }
+    },
+    {
+      "tipo": "digitale",
+      "id": "wp-translate-ai",
+      "nome": "WP Translate AI",
+      "categoria": "moduli-wordpress",
+      "prezzo_centesimi": 2490,
+      "descrizione": "Plugin WordPress leggero per siti multilingua, con traduzione automatica via API AI (chiave tua, nessun credito proprietario). Alternativa a WPML senza abbonamento fisso.",
+      "descrizione_completa": "Plugin WordPress leggero per siti multilingua, con traduzione automatica via API AI (chiave tua, nessun credito proprietario). Alternativa a WPML senza abbonamento fisso.",
+      "immagine": "",
+      "icona": "🌍",
+      "visibile": true,
+      "tr": {
+        "en": {
+          "nome": "WP Translate AI",
+          "descrizione": "Lightweight WordPress plugin for multilingual sites, with automatic translation via AI API (your own key, no proprietary credits). A WPML alternative with no fixed subscription.",
+          "descrizione_completa": "Lightweight WordPress plugin for multilingual sites, with automatic translation via AI API (your own key, no proprietary credits). A WPML alternative with no fixed subscription."
+        }
+      }
     }
   ]
 }
