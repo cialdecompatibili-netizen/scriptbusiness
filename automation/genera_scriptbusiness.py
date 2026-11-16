@@ -81,22 +81,42 @@ for pid, ni, ne, c, cent, ti, te, ic in X:
 
 def home(lang):
     en = lang == "en"; base = "__BASEURL__/en" if en else "__BASEURL__"; shop = base + ("/shop/" if en else "/negozio/")
-    ct = base + ("/contact/" if en else "/contatti/")
-    t = (("Free website, forever", "Your website. Free forever.", "Host it on GitHub Pages: no server, no hosting fees, no surprises. Manage posts, pages and shop from a visual admin in your browser.", "Get CmsPush", "Contact us",
-          [("Free forever", "Hosted on GitHub Pages at zero cost."), ("Admin in the browser", "Posts, pages and shop without touching code."), ("Blog + Shop", "Sell and publish from the same site.")], "Choose your version", "Questions? Write to us") if en else
-         ("Sito gratis per sempre", "Il tuo sito. Gratis per sempre.", "Ospitalo su GitHub Pages: niente server, niente spese di hosting, nessuna sorpresa. Gestisci articoli, pagine e shop da un pannello visuale nel browser.", "Scopri CmsPush", "Contattaci",
-          [("Gratis per sempre", "Ospitato su GitHub Pages a costo zero."), ("Admin nel browser", "Articoli, pagine e shop senza toccare il codice."), ("Blog + Shop", "Pubblichi e vendi dallo stesso sito.")], "Scegli la tua versione", "Hai domande? Scrivici"))
-    cards = '<div class="gc-grid">' + "".join(
-        f'<a class="gc-card" href="{shop}{pid}/"><div class="gc-card-b"><div class="gc-card-t">🚀 {n}</div><div class="gc-card-d">{EN if en else IT}</div><div class="gc-card-m">€{c/100:.2f}</div></div></a>'.replace(".00", "") for pid, n, c in V) + "</div>"
-    w = "".join(f"<div><b>{a}</b><span>{b}</span></div>" for a, b in t[5])
-    hero = f'<div class="gc"><section class="ent-hero"><div class="gc-wrap gc-hero-in"><div><p class="gc-eyebrow">{t[0]}</p><h1 class="gc-h1">{t[1]}</h1><p class="gc-lead">{t[2]}</p><div class="gc-act"><a class="gc-btn gc-btn-a" href="{shop}">{t[3]}</a><a class="gc-btn gc-btn-o" href="{ct}">{t[4]}</a></div></div><div class="ent-cycle">{w}</div></div></section></div>'
-    scr = f'<div class="gc"><section class="gc-sec gc-soft" id="servizi"><div class="gc-wrap"><h2 class="gc-h2">{t[6]}</h2>{cards}</div></section></div>'
-    ctb = f'<div class="gc"><section class="gc-sec" id="contatti"><div class="gc-wrap"><h2 class="gc-h2">{t[7]}</h2><p><a class="gc-btn gc-btn-a" href="{ct}">{t[4]}</a></p></div></section></div>'
-    return {"hero": ("Hero", True, hero), "servizi": ("Versioni", True, scr), "contatti": ("Contatti", True, ctb)}
+    ct = base + ("/contact/" if en else "/contatti/"); catp = base + ("/shop/category/" if en else "/negozio/categoria/"); prp = base + ("/shop/" if en else "/negozio/")
+    cnt = {}
+    for pr in cat["prodotti"]: cnt[pr["categoria"]] = cnt.get(pr["categoria"], 0) + 1
+    D = {"cmspush-cat": ("Your website free forever on GitHub Pages", "Il tuo sito gratis per sempre su GitHub Pages"),
+         "moduli-wordpress": ("InPost Locker, Redis Cache, Antispam CAPTCHA, AI Copilot, Translate AI", "InPost Locker, Redis Cache, Antispam CAPTCHA, AI Copilot, Translate AI")}
+    dflt = ("InPost Locker, Redis Cache and Antispam CAPTCHA", "InPost Locker, Redis Cache e Antispam CAPTCHA")
+    def card(href, ic, name, desc, meta):
+        return f'<a class="gc-card" href="{href}"><div class="gc-card-b"><div class="gc-card-t">{ic} {name}</div><div class="gc-card-d">{desc}</div><div class="gc-card-m">{meta}</div></div></a>'
+    cats = "".join(card(f"{catp}{cid}/", ic, ne if en else n, D.get(cid, dflt)[0 if en else 1],
+                        (f"{cnt.get(cid,0)} products" if en else f"{cnt.get(cid,0)} prodotti")) for cid, n, ne, ic in CATS)
+    feat = "".join(card(f"{prp}{pid}/", "🚀", n, EN if en else IT, f"€{c/100:.0f}") for pid, n, c in V)
+    L = (dict(eb="Scripts, modules and CMS ready to use", h="Scripts ready. Real profits.",
+              lead="Tested CMS and modules, already in production, ready to install and go online. One-time payment, no subscription, no surprises.",
+              b1="Browse the shop", b2="Contact us",
+              w=[("Tested in production", "Every script already runs on real sites."), ("One-time payment", "No subscription, no monthly fees."), ("Your platform", "PrestaShop, WordPress, Magento, OpenCart, Shopify, CS-Cart.")],
+              c_eb="What you will find", c_h="Pick your platform", c_l="Modules for the main e-commerce platforms and WordPress, plus the CMS that is free forever on GitHub.",
+              f_eb="Featured", f_h="CmsPush: your website, free forever", f_l="Host it on GitHub Pages: no server, no hosting fees. Manage posts, pages and shop from a visual admin in your browser.",
+              k_h="Questions? Write to us") if en else
+         dict(eb="Script, moduli e CMS pronti all'uso", h="Script pronti. Profitti reali.",
+              lead="CMS e moduli testati, già in produzione, pronti da installare e mettere online. Pagamento unico, nessun abbonamento, nessuna sorpresa.",
+              b1="Sfoglia lo shop", b2="Contattaci",
+              w=[("Testati in produzione", "Ogni script gira già su siti reali."), ("Pagamento unico", "Nessun abbonamento, nessun canone mensile."), ("La tua piattaforma", "PrestaShop, WordPress, Magento, OpenCart, Shopify, CS-Cart.")],
+              c_eb="Cosa trovi", c_h="Scegli la tua piattaforma", c_l="Moduli per le principali piattaforme e-commerce e per WordPress, più il CMS gratis per sempre su GitHub.",
+              f_eb="In evidenza", f_h="CmsPush: il tuo sito gratis per sempre", f_l="Ospitalo su GitHub Pages: niente server, niente spese di hosting. Gestisci articoli, pagine e shop da un pannello visuale nel browser.",
+              k_h="Hai domande? Scrivici"))
+    w = "".join(f"<div><b>{a}</b><span>{b}</span></div>" for a, b in L["w"])
+    hero = f'<div class="gc"><section class="ent-hero"><div class="gc-wrap gc-hero-in"><div><p class="gc-eyebrow">{L["eb"]}</p><h1 class="gc-h1">{L["h"]}</h1><p class="gc-lead">{L["lead"]}</p><div class="gc-act"><a class="gc-btn gc-btn-a" href="{shop}">{L["b1"]}</a><a class="gc-btn gc-btn-o" href="{ct}">{L["b2"]}</a></div></div><div class="ent-cycle">{w}</div></div></section></div>'
+    sec_c = f'<div class="gc"><section class="gc-sec gc-soft" id="servizi"><div class="gc-wrap"><p class="gc-eyebrow">{L["c_eb"]}</p><h2 class="gc-h2">{L["c_h"]}</h2><p class="gc-lead">{L["c_l"]}</p><div class="gc-grid">{cats}</div></div></section></div>'
+    sec_f = f'<div class="gc"><section class="gc-sec" id="perchi"><div class="gc-wrap"><p class="gc-eyebrow">{L["f_eb"]}</p><h2 class="gc-h2">{L["f_h"]}</h2><p class="gc-lead">{L["f_l"]}</p><div class="gc-grid">{feat}</div></div></section></div>'
+    sec_w = f'<div class="gc"><section class="gc-sec gc-soft" id="contesto"><div class="gc-wrap"><div class="ent-stats">{w}</div></div></section></div>'
+    sec_k = f'<div class="gc"><section class="gc-sec" id="contatti"><div class="gc-wrap"><h2 class="gc-h2">{L["k_h"]}</h2><p><a class="gc-btn gc-btn-a" href="{ct}">{L["b2"]}</a></p></div></section></div>'
+    return {"hero": ("Hero", True, hero), "servizi": ("Categorie", True, sec_c), "perchi": ("In evidenza", True, sec_f), "contesto": ("Perché", True, sec_w), "contatti": ("Contatti", True, sec_k)}
 for lang, path in (("it", "_data/blocks_home.json"), ("en", "_data/i18n/en/blocks_home.json")):
     d = home(lang); out = []
-    for k in ["hero", "contesto", "servizi", "perchi", "metodo", "avvisi", "contatti"]:
-        nome, en_, html = d.get(k, (k.capitalize(), False, ""))
-        out.append({"id": k, "nome": nome, "enabled": en_, "html": html})
+    for k in ["hero", "servizi", "perchi", "contesto", "metodo", "avvisi", "contatti"]:
+        nome, on, html = d.get(k, (k.capitalize(), False, ""))
+        out.append({"id": k, "nome": nome, "enabled": on, "html": html})
     W(path, json.dumps(out, ensure_ascii=False, indent=2))
 print("ok")

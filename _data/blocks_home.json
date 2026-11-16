@@ -3,25 +3,25 @@
     "id": "hero",
     "nome": "Hero",
     "enabled": true,
-    "html": "<div class=\"gc\"><section class=\"ent-hero\"><div class=\"gc-wrap gc-hero-in\"><div><p class=\"gc-eyebrow\">Sito gratis per sempre</p><h1 class=\"gc-h1\">Il tuo sito. Gratis per sempre.</h1><p class=\"gc-lead\">Ospitalo su GitHub Pages: niente server, niente spese di hosting, nessuna sorpresa. Gestisci articoli, pagine e shop da un pannello visuale nel browser.</p><div class=\"gc-act\"><a class=\"gc-btn gc-btn-a\" href=\"__BASEURL__/negozio/\">Scopri CmsPush</a><a class=\"gc-btn gc-btn-o\" href=\"__BASEURL__/contatti/\">Contattaci</a></div></div><div class=\"ent-cycle\"><div><b>Gratis per sempre</b><span>Ospitato su GitHub Pages a costo zero.</span></div><div><b>Admin nel browser</b><span>Articoli, pagine e shop senza toccare il codice.</span></div><div><b>Blog + Shop</b><span>Pubblichi e vendi dallo stesso sito.</span></div></div></div></section></div>"
-  },
-  {
-    "id": "contesto",
-    "nome": "Contesto",
-    "enabled": false,
-    "html": ""
+    "html": "<div class=\"gc\"><section class=\"ent-hero\"><div class=\"gc-wrap gc-hero-in\"><div><p class=\"gc-eyebrow\">Script, moduli e CMS pronti all'uso</p><h1 class=\"gc-h1\">Script pronti. Profitti reali.</h1><p class=\"gc-lead\">CMS e moduli testati, già in produzione, pronti da installare e mettere online. Pagamento unico, nessun abbonamento, nessuna sorpresa.</p><div class=\"gc-act\"><a class=\"gc-btn gc-btn-a\" href=\"__BASEURL__/negozio/\">Sfoglia lo shop</a><a class=\"gc-btn gc-btn-o\" href=\"__BASEURL__/contatti/\">Contattaci</a></div></div><div class=\"ent-cycle\"><div><b>Testati in produzione</b><span>Ogni script gira già su siti reali.</span></div><div><b>Pagamento unico</b><span>Nessun abbonamento, nessun canone mensile.</span></div><div><b>La tua piattaforma</b><span>PrestaShop, WordPress, Magento, OpenCart, Shopify, CS-Cart.</span></div></div></div></section></div>"
   },
   {
     "id": "servizi",
-    "nome": "Versioni",
+    "nome": "Categorie",
     "enabled": true,
-    "html": "<div class=\"gc\"><section class=\"gc-sec gc-soft\" id=\"servizi\"><div class=\"gc-wrap\"><h2 class=\"gc-h2\">Scegli la tua versione</h2><div class=\"gc-grid\"><a class=\"gc-card\" href=\"__BASEURL__/negozio/cmspush/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🚀 CmsPush</div><div class=\"gc-card-d\">CMS admin per Jekyll e GitHub Pages: il tuo sito gratis per sempre, ospitato su GitHub. Gestisci articoli, pagine e shop direttamente dal browser. Zero server, zero spese di hosting.</div><div class=\"gc-card-m\">€19</div></div></a><a class=\"gc-card\" href=\"__BASEURL__/negozio/cmspushacademy/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🚀 CmsPush Academy</div><div class=\"gc-card-d\">CMS admin per Jekyll e GitHub Pages: il tuo sito gratis per sempre, ospitato su GitHub. Gestisci articoli, pagine e shop direttamente dal browser. Zero server, zero spese di hosting.</div><div class=\"gc-card-m\">€19</div></div></a></div></div></section></div>"
+    "html": "<div class=\"gc\"><section class=\"gc-sec gc-soft\" id=\"servizi\"><div class=\"gc-wrap\"><p class=\"gc-eyebrow\">Cosa trovi</p><h2 class=\"gc-h2\">Scegli la tua piattaforma</h2><p class=\"gc-lead\">Moduli per le principali piattaforme e-commerce e per WordPress, più il CMS gratis per sempre su GitHub.</p><div class=\"gc-grid\"><a class=\"gc-card\" href=\"__BASEURL__/negozio/categoria/cmspush-cat/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🚀 CmsPush</div><div class=\"gc-card-d\">Il tuo sito gratis per sempre su GitHub Pages</div><div class=\"gc-card-m\">2 prodotti</div></div></a><a class=\"gc-card\" href=\"__BASEURL__/negozio/categoria/moduli-prestashop/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🛒 Moduli PrestaShop</div><div class=\"gc-card-d\">InPost Locker, Redis Cache e Antispam CAPTCHA</div><div class=\"gc-card-m\">3 prodotti</div></div></a><a class=\"gc-card\" href=\"__BASEURL__/negozio/categoria/moduli-wordpress/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">📝 Moduli WordPress</div><div class=\"gc-card-d\">InPost Locker, Redis Cache, Antispam CAPTCHA, AI Copilot, Translate AI</div><div class=\"gc-card-m\">5 prodotti</div></div></a><a class=\"gc-card\" href=\"__BASEURL__/negozio/categoria/moduli-magento/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🧱 Moduli Magento 2</div><div class=\"gc-card-d\">InPost Locker, Redis Cache e Antispam CAPTCHA</div><div class=\"gc-card-m\">3 prodotti</div></div></a><a class=\"gc-card\" href=\"__BASEURL__/negozio/categoria/moduli-opencart/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🛍️ Moduli OpenCart</div><div class=\"gc-card-d\">InPost Locker, Redis Cache e Antispam CAPTCHA</div><div class=\"gc-card-m\">3 prodotti</div></div></a><a class=\"gc-card\" href=\"__BASEURL__/negozio/categoria/moduli-shopify/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🏪 Moduli Shopify</div><div class=\"gc-card-d\">InPost Locker, Redis Cache e Antispam CAPTCHA</div><div class=\"gc-card-m\">3 prodotti</div></div></a><a class=\"gc-card\" href=\"__BASEURL__/negozio/categoria/moduli-cscart/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🧩 Moduli CS-Cart</div><div class=\"gc-card-d\">InPost Locker, Redis Cache e Antispam CAPTCHA</div><div class=\"gc-card-m\">3 prodotti</div></div></a></div></div></section></div>"
   },
   {
     "id": "perchi",
-    "nome": "Perchi",
-    "enabled": false,
-    "html": ""
+    "nome": "In evidenza",
+    "enabled": true,
+    "html": "<div class=\"gc\"><section class=\"gc-sec\" id=\"perchi\"><div class=\"gc-wrap\"><p class=\"gc-eyebrow\">In evidenza</p><h2 class=\"gc-h2\">CmsPush: il tuo sito gratis per sempre</h2><p class=\"gc-lead\">Ospitalo su GitHub Pages: niente server, niente spese di hosting. Gestisci articoli, pagine e shop da un pannello visuale nel browser.</p><div class=\"gc-grid\"><a class=\"gc-card\" href=\"__BASEURL__/negozio/cmspush/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🚀 CmsPush</div><div class=\"gc-card-d\">CMS admin per Jekyll e GitHub Pages: il tuo sito gratis per sempre, ospitato su GitHub. Gestisci articoli, pagine e shop direttamente dal browser. Zero server, zero spese di hosting.</div><div class=\"gc-card-m\">€19</div></div></a><a class=\"gc-card\" href=\"__BASEURL__/negozio/cmspushacademy/\"><div class=\"gc-card-b\"><div class=\"gc-card-t\">🚀 CmsPush Academy</div><div class=\"gc-card-d\">CMS admin per Jekyll e GitHub Pages: il tuo sito gratis per sempre, ospitato su GitHub. Gestisci articoli, pagine e shop direttamente dal browser. Zero server, zero spese di hosting.</div><div class=\"gc-card-m\">€19</div></div></a></div></div></section></div>"
+  },
+  {
+    "id": "contesto",
+    "nome": "Perché",
+    "enabled": true,
+    "html": "<div class=\"gc\"><section class=\"gc-sec gc-soft\" id=\"contesto\"><div class=\"gc-wrap\"><div class=\"ent-stats\"><div><b>Testati in produzione</b><span>Ogni script gira già su siti reali.</span></div><div><b>Pagamento unico</b><span>Nessun abbonamento, nessun canone mensile.</span></div><div><b>La tua piattaforma</b><span>PrestaShop, WordPress, Magento, OpenCart, Shopify, CS-Cart.</span></div></div></div></section></div>"
   },
   {
     "id": "metodo",
