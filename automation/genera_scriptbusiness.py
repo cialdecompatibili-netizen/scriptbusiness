@@ -13,7 +13,7 @@ EN = "Admin CMS for Jekyll and GitHub Pages: your website free forever, hosted o
 BI = ["Sito gratis per sempre su GitHub Pages", "Admin panel visuale nel browser", "Blog + Shop integrati", "Aggiornamenti automatici inclusi", "Zero server, zero spese di hosting"]
 BE = ["Website free forever on GitHub Pages", "Visual admin panel in the browser", "Blog + Shop built in", "Automatic updates included", "No server, no hosting costs"]
 # id, nome, prezzo in centesimi
-V = [("cmspush", "CmsPush", 1900), ("cmspushb", "CmsPush B", 2900), ("cmspushc", "CmsPush C", 4900)]
+V = [("cmspush", "CmsPush", 1900), ("cmspushaccademy", "CmsPush Accademy", 2900)]
 
 cat = {"_nota": "Catalogo ScriptBusiness (prezzi in CENTESIMI). Generato da automation/genera_scriptbusiness.py.",
        "categorie": [{"nome": "CmsPush", "id": "cmspush-cat", "icona": "🚀", "tr": {"en": {"nome": "CmsPush"}}}], "prodotti": []}
